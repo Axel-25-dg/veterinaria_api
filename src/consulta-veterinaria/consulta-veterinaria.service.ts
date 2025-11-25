@@ -17,7 +17,7 @@ export class ConsultaVeterinariaService {
             ...createConsultaveterinariaDto,
             edad: String(createConsultaveterinariaDto.edad),
             telefonoContacto: String(createConsultaveterinariaDto.telefonoContacto),
-            fechaConsulta: createConsultaveterinariaDto.fechaConsulta.toISOString(),
+            fechaConsulta: createConsultaveterinariaDto.fechaConsulta.toString(),
             costoConsulta: String(createConsultaveterinariaDto.costoConsulta),
         });
         return this.ConsultaVeterinariaRepository.save(consultaveterinaria);

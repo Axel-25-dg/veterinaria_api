@@ -4,6 +4,9 @@ export class CreateConsultaVeterinariaDto {
     @IsString()
     nombreMascota: string;
 
+    @IsString()
+    especie: string;
+
     @IsNumber()
     edad: number;
 
@@ -14,7 +17,7 @@ export class CreateConsultaVeterinariaDto {
     telefonoContacto: number;
 
     @IsDate()
-    fechaConsulta: Date;
+    fechaConsulta: string;
 
     @IsString()
     motivoConsulta: string;

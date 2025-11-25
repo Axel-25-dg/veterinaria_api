@@ -20,6 +20,9 @@ import { ConfigModule } from '@nestjs/config';
       synchronize: true,
       //ssl: { rejectUnauthorized: false },
     }),
+    ConsultaVeterinariaModule,
   ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
